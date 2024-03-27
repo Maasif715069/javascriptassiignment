@@ -1,0 +1,20 @@
+/* Grayscale filter for inactive thumbnails */
+#thumbnails img {
+    filter: grayscale(100%);
+}
+
+/* Remove grayscale filter for active thumbnail */
+#thumbnails img.active {
+    filter: grayscale(0%);
+}
+/* Style the thumbnails container */
+#thumbnails {
+    display: flex; /* Use flexbox */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+/* Style each thumbnail */
+#thumbnails li {
+    margin-right: 10px; /* Add some spacing between thumbnails */
+}
